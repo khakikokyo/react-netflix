@@ -67,6 +67,7 @@ function Row({isLargeRow, title, id, fetchUrl }) {
                 alt={movie.name}
                 onClick={() => {handleClick(movie)}}
               />
+              <p className="row__title">{movie.title || movie.name || movie.original_name}</p>
             </SwiperSlide>
           ))}
         </div>

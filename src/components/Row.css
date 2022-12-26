@@ -25,6 +25,9 @@ h2 {
   border-radius: 4px;
   cursor: pointer;
 }
+.row__title {
+  text-align: center;
+}
 .row__poster:hover {
   transform: scale(1.08);
 }
