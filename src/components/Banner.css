@@ -36,6 +36,10 @@
   }
 }
 
+.banner__icon {
+  padding-right: 4px;
+}
+
 .banner__contents {
   margin-left: 40px;
   padding-top: 140px;

@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import requests from "../api/requests";
 import "./Banner.css";
 import styled from "styled-components";
+import { BsPlayFill } from 'react-icons/bs';
+import { RiInformationLine } from 'react-icons/ri';
 
 function Banner() {
 
@@ -48,8 +50,8 @@ function Banner() {
           <h1 className="banner__title">{movie.title || movie.name || movie.original_name}</h1>
   
           <div className="banner__buttons">
-            <button className="banner__button play" onClick={() => {setIsClicked(true)}}>Play</button>
-            <button className="banner__button info">More Information</button>
+            <button className="banner__button play" onClick={() => {setIsClicked(true)}}><BsPlayFill className="banner__icon" />Play</button>
+            <button className="banner__button info"><RiInformationLine className="banner__icon" />More Information</button>
           </div>
   
           <h1 className="banner__description">{truncate(movie.overview, 100)}</h1>
